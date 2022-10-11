@@ -41,6 +41,10 @@ python -m pip install --upgrade pip
 git clone https://github.com/OscarRPi/Django-Form.git
 ```
 
+```cmd
+cd Django-Form
+```
+
 ### 1.1 Instalando requerimientos
 
 ```cmd
@@ -48,12 +52,6 @@ pip install -r requirements.txt
 ```
 
 ### 1.2 Iniciar el servidor
-
-Cambiar a la ruta donde esta ubicado el archivo manage.py
-
-```cmd
-cd Django-Form
-```
 
 ```cmd
 python manage.py runserver
