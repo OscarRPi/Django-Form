@@ -1,6 +1,8 @@
-from django.db import models
-from django.core.validators import RegexValidator
+# formapp/models.py
 
+from django.db import models
+
+from django.core.validators import RegexValidator
 
 class Data_User(models.Model):
 	

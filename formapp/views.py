@@ -1,7 +1,9 @@
+# formapp/views.py
+
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-
 from django.shortcuts import render, redirect
+
 from formapp.models import Data_User
 from formapp.forms import DataForm
 

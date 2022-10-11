@@ -1,3 +1,5 @@
+# form/wsgi.py
+
 """
 WSGI config for form project.
 
@@ -11,6 +13,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'form.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'form.settings.local')
 
 application = get_wsgi_application()

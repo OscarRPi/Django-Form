@@ -1,6 +1,10 @@
+# formapp/tests/test_urls.py
+
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
+
 from formapp.views import read,create,update,delete,edit
+
 class TestsURls(SimpleTestCase):
     
     def test_read_url_is_resolved(self):
