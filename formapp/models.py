@@ -15,5 +15,3 @@ class Data_User(models.Model):
     def __str__(self):
         txt = "{0} - {1} {2} ({3})"
         return txt.format(self.id_usuario,self.nombres,self.apellidos,self.correo)
-
-# Create your models here.
