@@ -1,27 +1,45 @@
-from .models import Data_User
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
 from django.urls import reverse
-from django.shortcuts import render
 
-def index(request):
-    return render(request, "formapp/index.html")
+from django.shortcuts import render, redirect
+from formapp.models import Data_User
+from formapp.forms import DataForm
 
-def send_data(request):
+def create(request):  
+    if request.method == "POST":  
+        
+        form = DataForm(request.POST)  
+                    
+        if form.is_valid():  
+            try:
+                form.save()  
+                return redirect('/')
+            except:
+                pass
+    else:  
+        form = DataForm()  
+    return render(request,'formapp/form.html',{'form':form}) 
 
-    if request.method == "POST":
+def read(request):  
+    users = Data_User.objects.all()  
+    return render(request,"formapp/index.html",{'users':users})  
 
-        Data_User.objects.create(
-            nombres     = request.POST["nombres"],
-            apellidos   = request.POST["apellidos"],
-            correo       = request.POST["correo"],
-            ciudad      = request.POST["ciudad"],
-        )
+def update(request, id):  
+    user = Data_User.objects.get(id_usuario=id)  
+    form = DataForm(request.POST, instance = user)  
+    if form.is_valid():  
+        form.save()  
+        return redirect("/")  
+    return render(request, 'formapp/edit.html', {'user': user}) 
 
-        return render(request, "formapp/index.html", {
-                "message": "Datos guardados correctamente"
-            })
+def edit(request, id):  
+    user = Data_User.objects.get(id_usuario=id)  
+    return render(request,'formapp/edit.html', {'user':user})  
 
-    else:
+def delete(request, id):  
+    user = Data_User.objects.get(id_usuario=id)  
+    user.delete()  
+    return redirect("/")
 
-        return render(request, "formapp/send_data.html")
+
+

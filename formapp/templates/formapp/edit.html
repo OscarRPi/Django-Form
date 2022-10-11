@@ -1,0 +1,44 @@
+{% extends "formapp/layout.html" %}
+{% block title %}Editar{% endblock title %}
+ 
+{% block content %}
+    <div class="col-md-12">
+        <h3>Editar usuario</h3>
+        <form method="POST" class="post-form" action="/update/{{user.id_usuario}}">  
+            {% csrf_token %}  
+            <div class="container">  
+                <br>   
+                <div class="form-group row">  
+                    <label class="col-sm-2 col-form-label">Nombres:</label>  
+                    <div class="col-sm-4">  
+                        <input type="text" class="form-control" name="nombres" id="id_nombres" required maxlength="40" value="{{ user.nombres }}" />  
+                    </div>  
+                </div>  
+                <div class="form-group row">  
+                    <label class="col-sm-2 col-form-label">Apellidos:</label>  
+                    <div class="col-sm-4">  
+                        <input type="text" class="form-control" name="apellidos" id="id_apellidos" required maxlength="40" value="{{ user.apellidos }}" />  
+                    </div>  
+                </div> 
+                <div class="form-group row">  
+                    <label class="col-sm-2 col-form-label">Correo:</label>  
+                    <div class="col-sm-4">  
+                        <input type="email" class="form-control" name="correo" id="id_correo" required maxlength="40" value="{{ user.correo }}" />  
+                    </div>  
+                </div>  
+                <div class="form-group row">  
+                    <label class="col-sm-2 col-form-label">Ciudad:</label>  
+                    <div class="col-sm-4">  
+                        <input type="text" class="form-control" name="ciudad" id="id_ciudad" required maxlength="40" value="{{ user.ciudad }}" />  
+                    </div>  
+                </div>  
+                <div class="form-group row">  
+                    <label class="col-sm-1 col-form-label"></label>  
+                    <div class="col-sm-4">  
+                        <button type="submit" class="btn btn-success btn-lg">Actualizar</button>  
+                    </div>  
+                </div>  
+            </div>  
+        </form>
+    </div>  
+{% endblock content %}   
