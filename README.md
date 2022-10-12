@@ -2,14 +2,14 @@
 
 Este proyecto esta hecho con el Framework Django, estructurando una api CRUD monolitica que guarda los datos en una base de datos sqlite
 
-Back: Python (Django)
-Front: HTML,CSS(Bootstrap)
-Unit-tests: django.test, selenium
+* Back: Python (Django)
+* Front: HTML,CSS(Bootstrap)
+* Unit-tests: django.test, selenium
 
 Sistemas operativos usados:
 
-*Windows 10 Pro
-*Linux Debian 11
+* Windows 10 Pro
+* Linux Debian 11
 
 Python version: 3.10.7
 
@@ -17,17 +17,18 @@ Python version: 3.10.7
 
 Este tutorial esta dividido en cuatro secciones:
 
-1. Creando un entorno virtual
+* 1. Creando un entorno virtual
 
-1.1 Instalando requerimientos
-1.2 Iniciar el servidor
+  1.1 Instalando requerimientos
+  1.2 Iniciar el servidor
 
-2. Correr unit-test para la app
-3. Correr unit-test funcionales
+* 2. Correr unit-test para la app
 
-4. Probar aplicacion en la nube
+* 3. Correr unit-test funcionales
 
-4.1 Mejoras (En construccion) 
+* 4. Probar aplicacion en la nube
+
+  4.1 Mejoras (En construccion) 
 
 ## 1. Creando un entorno virtual
 
@@ -100,8 +101,9 @@ Esto ejecutará 14 unit-tests para:
 
 ## 3.  Correr unit-test funcionales
 
-> (Windows) Se recomienta usar Google Chrome Versión 106.0.5249.103 
-> (Linux)   Se recomienta usar Chromium Version 106.0.5249.91 
+* > (Windows) Se recomienta usar Google Chrome Versión 106.0.5249.103 
+
+* > (Linux)   Se recomienta usar Chromium Version 106.0.5249.91 
 
 En la consola de Windows/Linux detener el servidor con 'ctrl + C' y ejecutar el siguiente comando:
 
