@@ -30,14 +30,8 @@ def create(request):
 
 def read(request): 
 
-    try:
-
-        users = Data_User.objects.all()
-        return render(request,"formapp/index.html",{'users':users})  
-
-    except:
-
-        return redirect('/')
+    users = Data_User.objects.all()
+    return render(request,"formapp/index.html",{'users':users})  
 
 def update(request, id):  
 

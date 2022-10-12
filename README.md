@@ -28,7 +28,7 @@ Este tutorial esta dividido en cuatro secciones:
 
 * 4. Probar aplicacion en la nube
 
-* 5. Mejoras (En construccion) 
+* Mejoras (En construccion) 
 
 ## 1. Creando un entorno virtual
 
@@ -119,6 +119,6 @@ Se ha desplegado en la nube a traves de la pagina pythonanywhere.com
 
 [Django_Form](https://djangotesting.pythonanywhere.com/)
 
-## 5.  Mejoras (en construccion)
+## Mejoras (en construccion)
 
 [Django_Form_REST](https://github.com/OscarRPi/Django-Form-REST)
