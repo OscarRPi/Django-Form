@@ -12,8 +12,10 @@ from time import sleep
 class TestFormApp(StaticLiveServerTestCase):
     
     def setUp(self):
-        
-        self.browser = webdriver.Chrome('functional_tests/chromedriver.exe')
+        try:
+            self.browser = webdriver.Chrome('functional_tests/chromedriver.exe')
+        except:
+            self.browser = webdriver.Chrome('functional_tests/chromedriver')
         
     def tearDown(self):
         
