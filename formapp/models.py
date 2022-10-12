@@ -6,7 +6,7 @@ from django.core.validators import RegexValidator
 
 class Data_User(models.Model):
 	
-    alpha = RegexValidator(r'^[a-zA-Z ]*$', 'Only alpha characters are allowed.')
+    alpha = RegexValidator(r'^[a-zA-Z ]*$', 'Solo estan permitidos los caracteres (a-z),(A-Z) y espacio')
     
     id_usuario = models.AutoField(primary_key=True)
     nombres = models.CharField(max_length=50, null = False,validators=[alpha], default = "")

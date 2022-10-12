@@ -40,7 +40,12 @@
                     <div class="col-sm-4">  
                         <button type="submit" class="btn btn-success btn-lg">Actualizar</button>  
                     </div>  
-                </div>  
+                </div>
+                {% if form.errors %}
+                    <div class="alert alert-danger">
+                        {{ form.errors }}
+                    </div>
+                {% endif %} 
             </div>  
         </form>
     </div>  
