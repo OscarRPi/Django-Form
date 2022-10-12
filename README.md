@@ -8,7 +8,7 @@ Unit-tests: django.test, selenium
 
 # Introduccion
 
-Este tutorial esta dividido en tres secciones:
+Este tutorial esta dividido en cuatro secciones:
 
 1. Creando un entorno virtual
 1.1 Instalando requerimientos
@@ -86,6 +86,6 @@ Esto ejecutara unit-tests que simulan el comportamiento del usuario en la pagina
 
 ## 4.  Probar aplicacion en la nube
 
-Solo para propositos de prueba de la aplicacion, se ha desplegado en la nube a traves de la pagina pythonanywhere.com en la siguiente direccion:
+Se ha desplegado en la nube a traves de la pagina pythonanywhere.com
 
 [Django_Form](https://djangotesting.pythonanywhere.com/)
