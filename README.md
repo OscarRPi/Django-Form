@@ -19,8 +19,8 @@ Este tutorial esta dividido en cuatro secciones:
 
 * 1. Creando un entorno virtual
 
-  1.1 Instalando requerimientos
-  1.2 Iniciar el servidor
+* i.i Instalando requerimientos
+* i.ii Iniciar el servidor
 
 * 2. Correr unit-test para la app
 
@@ -28,7 +28,7 @@ Este tutorial esta dividido en cuatro secciones:
 
 * 4. Probar aplicacion en la nube
 
-  4.1 Mejoras (En construccion) 
+* 5. Mejoras (En construccion) 
 
 ## 1. Creando un entorno virtual
 
