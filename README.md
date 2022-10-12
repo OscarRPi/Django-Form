@@ -101,9 +101,9 @@ Esto ejecutará 14 unit-tests para:
 
 ## 3.  Correr unit-test funcionales
 
-* > (Windows) Se recomienta usar Google Chrome Versión 106.0.5249.103 
+* > (Windows) Se recomienta instalar Google Chrome Versión 106.0.5249.103 
 
-* > (Linux)   Se recomienta usar Chromium Version 106.0.5249.91 
+* > (Linux)   Se recomienta instalar Chromium Version 106.0.5249.91 
 
 En la consola de Windows/Linux detener el servidor con 'ctrl + C' y ejecutar el siguiente comando:
 
