@@ -17,6 +17,8 @@ Este tutorial esta dividido en tres secciones:
 2. Correr unit-test para la app
 3. Correr unit-test funcionales
 
+4. Probar aplicacion en la nube
+
 ## 1. Creando un entorno virtual
 
 Primero debemos asegurarnos de tener instalado Python y Git. 
@@ -81,3 +83,9 @@ python manage.py test functional_tests
 ```
 
 Esto ejecutara unit-tests que simulan el comportamiento del usuario en la pagina
+
+## 4.  Probar aplicacion en la nube
+
+Solo para propositos de prueba de la aplicacion, se ha desplegado en la nube a traves de la pagina pythonanywhere.com en la siguiente direccion:
+
+[Django_Form](https://djangotesting.pythonanywhere.com/)
