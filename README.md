@@ -28,8 +28,6 @@ Este tutorial esta dividido en cuatro secciones:
 
 * 4. Probar aplicacion en la nube
 
-* Mejoras (En construccion) 
-
 ## 1. Creando un entorno virtual
 
 Primero debemos asegurarnos de tener instalado Python y Git. 
@@ -118,7 +116,3 @@ Esto ejecutara 4 unit-tests que simulan el comportamiento del usuario en la pagi
 Se ha desplegado en la nube a traves de la pagina pythonanywhere.com
 
 [Django_Form](https://djangotesting.pythonanywhere.com/)
-
-## Mejoras (en construccion)
-
-[Django_Form_REST](https://github.com/OscarRPi/Django-Form-REST)
